@@ -7,7 +7,7 @@ package motor3R;
  * El tablero se representa con una matriz de 3x3.
  *
  * @author a23SergioGR
- * @version 1.0
+ * @version 1.1
  */
 public class TresEnRaya {
     private short dificultad;
