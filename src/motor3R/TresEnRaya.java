@@ -20,6 +20,7 @@ public class TresEnRaya {
     */
     public TresEnRaya() {
         // Crear e Inicializar tablero
+        dificultad = 1;
         tablero = new char[3][3];
         for (int i = 0; i < tablero.length; i++) {
             for (int j = 0; j < tablero[i].length; j++) {
@@ -59,7 +60,9 @@ public class TresEnRaya {
      * @return La matriz que representa el tablero.
      */
     public char[][] getTablero() {
-        return tablero;
+        char[][] copiaTablero = new char[tablero.length][tablero[0].length];
+        copiaTablero = tablero.clone();
+        return copiaTablero;
     }
 
     /**
