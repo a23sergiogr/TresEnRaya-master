@@ -18,9 +18,8 @@ public class InterfaceConsola {
     }
         
     public void inicio() {
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Escoge el nivel de dificultad: 1. Fácil 2. Medio 3. Difícil");
-        int nivel = scanner.nextInt();
+        int nivel = sc.nextInt();
         tresRaya.setDificultad((short) nivel);
         System.out.println("Nueva Partida, Tablero vacío");
         mostrarTablero(tresRaya.getTablero());
